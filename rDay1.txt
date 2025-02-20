@@ -1,0 +1,5 @@
+*REACT
+1.It's an JS library, Used to buid Single Page Applications, It allows us to create reusable UI components
+2.Mainly it is famous about creating SPA's having the mechanism of virtual DOM.
+*Virtual DOM
+1.If have more no.of components, renders only the change occured in that particular component only, rest of all will be same.  
