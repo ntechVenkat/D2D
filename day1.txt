@@ -1,0 +1,16 @@
+<h1>AJAX</h1>
+1.Who controle the HTML, shwing some errors like Syntactically & Typically?<br/>
+2.Local & Session Storage show practically in JS & React?<br/>
+//3.What is Map Element?Practical show of Map working behaviour?<br/>
+4.AJAX – It’s not a programming language, Just uses the combination of XMLHttpRequest() object(to send request to the web server) & 
+JS-DOM(to display or use data), AJAX is a Asynchronous JS & XML.<br/>
+
+5.Promise<br/>
+*It's an Object which returns the status of the function if it is fulfilled, pending, rejected.<br/>
+*The results of mentioned states of the function will be value, undefined, error message.<br/>
+*Promise Object have a properties like state & result, but we cannot acces directely, access only through .then() method
+*The method has two parameters one for resolve, one for reject, And both are optinal, so we can declare any one or both.<br/>
+
+Promise.all([]) - Returns the value of fulfilled one promise, after all mentioned resolved.<br/>
+
+
