@@ -1,0 +1,56 @@
+*apply()
+-->It is similar to the call() method, but the only change in the way of assigning arguments to the method.
+In call() we assign seperatly, where as in the apply() should be in array
+-->In JS strict-mode if 1st argument is not an object in apply(), It becomes owner of the invoked function, whereas in non-strict becomes Global Object.
+-->Scope of apply() is there is no max()existance in arrays, by using apply() we can make it as sense to work.
+*bind()
+-->It will borrow the method from other object
+
+
+*async/await
+-->These will makes promises easier to write, Async makes function returns the promise, await makes a function wait for promise.
+-->Await can only write inside the async, It will pause the execution and wait for the resolved promise before continue
+
+*JS Class
+-->It is not an Object, Just template for create multiple Objects
+-->Creating an Class
+-->Add method to Class
+-->Add parameters to the Class method
+-->Small Project - I want to know my age using the Class
+*Class Inheritance
+-->To inherit the methods of parent class use 'extend' keyword
+-->To call the constructor function of parent class use 'super' keyword
+-->Unlike functions, JS declarations, JS classes are not hoisted.
+
+*Event Bubbling/Trickling
+-->It's a process of controlling the event spread or Bubbling or Trickling,
+-->Default trickling will be bottom to top considered as false value in second parameter
+-->Let's take an example of 3-addEventListeners in the series of id's like grandParent, Parent, child of elements,
+now second argumnets like 1-false, 2-true, 3-false, & clicked 3event the output will be 2,3,1.
+-->
+
+*Event Loop
+-->It is nothing but the execution precedence of the tasks in JS
+-->callStacks, microstacks(Promises), webAPI's(setTimeout,setInterval..etc, fetch, DOM) like macrostacks
+
+*Exception Handling
+-->Nothing but error handling with try, catch, throw, finally
+-->JS creates an Object Error having two properties name & message
+-->If not mention the both properties then it will give complete error like name & message
+-->By using throw we can show the custom error as you would like.
+
+*Others Points
+-->
+
+
+
+
+
+Q's
+
+
+
+
+
+
+
