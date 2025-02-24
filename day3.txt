@@ -1,0 +1,55 @@
+*Protocols
+-->Rules of the systems to agree data receiving or sending
+-->The basic definition is set of rules or procedures to tansmitting data between electronic devices like computers
+-->There are many protocols like IP-Internet Protocol, TCP-Transmission Control Protocol, Http, Http secure.
+-->The common and our case mostly discuss about the HTTP, HTTP Secure
+-->Hyper Text Transfer Protocol, Hyper Text transfer Protocol Secure
+-->These have methods like GET, POST, PUT, PATCH, DELETE, in otherwords we can say yhese API calls
+-->URL-Uniform Resource Locator nothing but address of we resource
+-->URL Syntax-protocol://domain.subDomain.topLevelDomain/path?queryParameters
+
+
+-->HTTP Request(Startline, Headers, Body)
+Startline(url, methods, version), Headers(Request Headers, General Headers, Representation Headers), Body(Message from Client)
+-->HTTP Response(Startline, Headers, Body)
+Startline(version, Status code, Status text), Headers(Same as in request), Body(Answer from the server)
+
+*State Management in JS
+-->Data flow like creation, updating, deleting in an application
+-->Better to maintain state would be minimal
+-->PATCH and PUT purpose is same but execution different, means unlike PUT, PATCH will replace the change only not like entire object as in PUT.
+It won't touch other than the change environment of resource.
+
+*Default Values
+-->Some times we may give missing arguments means lesser than the declared parameters, then it's better to give default values.
+-->
+
+*REST Parameter
+-->It will store the values as in array
+-->For example we have given the excessive arguments to the function,
+then if we have mention the rest parameter remaining values stored in the rest parameter as array after assigned to declared parameters.
+
+*Spread Operator
+-->We can update and create the copies of arrays & objects
+-->We can apply Math functions like find the max value and min value of an arr have lot of items
+
+*Closures
+-->Function assigned to variable must be important here
+-->We can access & persist the parent function variable by child function, even the parent function returned.
+-->Understanding of JS single threaded, for example we have two functions one inside, now call the parent fun, through this we call the child fun,
+here we are accesing the variable declared in the parent fun even it's execution context completed,
+This is the importance of closures
+
+*Currying
+-->Function of having the multiple arguments, split into series of functions having signle arguments,
+-->By using this technique we can create Higher-Order-Functions
+-->Some higher order functions like map, filter, reduce, forEach, find, some, every methods
+
+*Others
+*Why JavaScript single threaded
+-->Means It can processed single command at a time of execution, doesn't mean that current execution context finish after only next execution can run,
+If current one suspended then it move to the next one, at later point pick back up where it left off means suspended.  
+
+
+
+
