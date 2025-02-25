@@ -1,0 +1,25 @@
+*Difference between export and export default
+-->If you used the export then import be like that means 'import {component}'
+-->If you used the export default then import will be unlike in above 'import component'
+-->While applying the export only the component name and function name should be same
+see the difference only is mentioning of curly braces here
+
+*Working with Forms
+-->Creating the form data using the state of class component
+-->Creating the form data using hooks in functional component show the error message if any is empty
+-->
+
+*Functional component Lifecycle hooks
+-->It will run when the component reach through different stages in its Lifecycle
+-->componentDidMount(), we can achieve this through as place empty dependency array in useEffect() hook,
+Call once after the component rendered
+-->componentDidUpdate(), we can achieve this through as place some value in the dependency array in useEffect() hook,
+Call once after the state updated in the component
+-->componentWillUnmount(), we can ahieve this through as return the call back function with empty dependency array.
+Call right before the component is unmounted.
+The thing relevant of unmounting phase, the useEffect() unmounting phase should be mention in the Which component want to be unmount.
+
+
+*Changing state from one another
+-->Nothing but the changing of state from one value to another value
+-->By using the useState hook we can change the state of the variable which mentioned in the component
