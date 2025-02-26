@@ -1,0 +1,39 @@
+*Using the Context API & Provider State
+-->Part of React core library, Basically it has two components like properties of provider & consumer, simply can let's say by prioviser can provide the data, by consumer can consume the data. 
+-->We can prevent the prop drilling which will helpful to the Browser Optimizations
+Prop drilling-Unnecessary passing of props to the components
+-->Provider has take the parameter like value which has the data to prop to particular component, whereas consumer has take the function have the parameter of provider as mentioned.
+-->If we try to consume the context with non-child provider context component, then it will give not work, so at this time we can provide the default context provider
+And one more if we have multi-threaded like nested context providers at this time the component adopts which one is nearest to it.
+-->we won't create multi threaded context providers as like nested, mostly will create the default provider only.
+-->In coming to the functional component we will use the useContext() hook instead of consumer context while in class components
+
+*Adding a Context reducer for actions
+-->Reducer is a function which can store the state values in the store, But useReducer will store the state values in the local constant variable
+-->Dispatch is like it will dispatch the action when the user action occured like onclick, onchange..etc
+-->State will store the updating values of initialState, In useReducer(reducer,initialState), reducer(state,action) here action will holds what type of action done by user.
+and state holds & update the value. 
+
+*Creating a Form with State
+-->Creating a form in the class based component, 
+-->In Class component rule first the constructor will executes if present
+-->No need to use constructor while mentioning the state object, when you want to display or execute something before return statement, then can go for constructor.
+-->Attribute value in input element represents the default value of input after initial loading of page, and name attribute represents the category of that element to show the difference of active in radio buton inputs. 
+
+*Controlled Components & onChange
+-->Means the state values will be controlled by the React,
+Another way of say like can control the form data in another component through callBack() like onChange()
+*Uncontrolled Component
+-->Data handled by the DOM, we won't write additional code for handling.
+-->The onChange() work will do by the DOM in the uncontrolled Components
+
+
+
+
+
+
+
+*TextInputGroup Component for Dry code
+*Working with props
+*CSS in React - Refer the video12 of tsh61 in YT
+*Adding Bootstrap(Events in React, Uncontrolled Components & refs, Form submit action to context, Error)
