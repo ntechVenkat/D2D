@@ -26,10 +26,3 @@ see the example file of CSSinReact.js
 *Mostly will use the export instead of export default...why?
 -->Because we can import multiple components of same folder in single line of code.see the From.js line2
 -->&& Implementation if both values will satisfy the condition
-
-DAY5
-*Lifecycle, HTTP & Deployment
-*Lifecycle Methods
-*AJAX
-*Axios
-*GET, POST & DELETE Requests
