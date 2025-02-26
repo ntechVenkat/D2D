@@ -1,0 +1,35 @@
+*Working with props
+-->Props, we can call it as properties, Nothing but passing data from one component to other component mostly from parent to child passing flow will happens.
+Another words like one way passing, Who sending props called parent, and same who receiving called child, child have access like can only read the props, not can be change by child.
+In the child we have to pass the parameter like name as props or your wish any name, for accesing the props should use the parameterName.propName why because props is an Object.
+
+*CSS in React
+-->CSS in styling is nothing but importing the external css file into the component CSS syntax will be same as usual like css rules.
+another way of implementation is like in line styling, here the syntax will change comfortable, readable, to JSX format like camelCase notation & small changes like class as className...etc
+-->We can use different ways in selectors like id, class, tag name...etc
+
+*Adding Bootstrap
+(Events in React, Uncontrolled Components & refs, Form submit action to context, Error checking & display)
+-->Official website for the bootstrap to install & for link to put in index.html of public folder
+https://react-bootstrap.github.io/
+npm install react-bootstrap bootstrap, then link element should
+-->Using of react-bootstrap is means
+Take one example code in the browser of react-bootstrap then should import all the things present in the dumped code
+see the example file of CSSinReact.js
+(Uncontrolled Components & refs)
+-->It means the change will be conrolled by DOM, so we can say that controlled component in DOM point of view, let's see the hands on experience
+-->In these scenario will use the useRef() hook
+(Form submit action to context)...?
+
+
+*Others
+*Mostly will use the export instead of export default...why?
+-->Because we can import multiple components of same folder in single line of code.see the From.js line2
+-->&& Implementation if both values will satisfy the condition
+
+DAY5
+*Lifecycle, HTTP & Deployment
+*Lifecycle Methods
+*AJAX
+*Axios
+*GET, POST & DELETE Requests

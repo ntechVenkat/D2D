@@ -1,0 +1,9 @@
+center{
+    background-color:lightgray;
+    margin:30px;
+}
+
+h1,p{
+    color: blue;
+    padding: 30px;
+}
