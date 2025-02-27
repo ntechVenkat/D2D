@@ -1,0 +1,40 @@
+DAY5
+*Lifecycle & Lifecycle Methods
+-->Basically every component have 3 phases of lifecycle, componentDidMount(), componentDidUpdate(), componentWillUnmount()
+-->Constructor(), getDerivedStateFromProps(props, state), render(), componentDidMount()
+-->If you want to execute something before the render can use constructor()
+-->If the state value is get as prop from another component then use getDerivedStateFromProps(), For example both parent & child have state, but child state is updating based on the parent child then use this method.
+-->As usual render() method will call,
+-->After that componentDidMount() will trigger, In generally this is used for making API calls, add EventListeners...etc
+-->*In second phase component re-renders, And before that the series of methods will execute like getDerivedStateFromProps(), shouldComponentUpdate(), render(), getSnapshotBeforeUpdate(prevStateAsInProps,presentState), componentDidUpdate()
+-->We get the update value of state if it's from props
+-->Confirmation of component update, By default it's true.
+-->As usual component re-render
+-->We can get snap nothing but save the changing state before get update
+-->Finally once everything done, componentDidUpdate() will executes, In generally if you want to make API call after updated use this phase.
+-->The all the above methods should be mention the return anything atleast null, otherwise throw an error.
+-->*Finally if you want to remove data from memories, clear the intervals and stop the API calls can do this phase of componentWillUnmount().
+
+*HTTP & Deployment
+-->Deployment nothing but run our project in the live server like anyone can see the project using this url like Netlify, Heroku, Vercel, AWS, Google cloud
+-->npm run buid this command will conver our project into one bundle like dist folder...etc
+
+*Axios
+-->It's an npm package library
+-->Majority use of this library, Best feature like we no need to convert data into string while sending, and not into json while getting,
+axios automatically will convert in sending & getting data requirements.
+-->In this have methods for requests like GET, POST, PUT, DELETE and all.
+-->We can mention the baseUrl, Can make requests by using specific paths of that baseUrl.
+-->We can make request calls from Origin like from Node.js
+
+*GET, POST, PUT & DELETE Requests
+-->These methods we can make requests api calls through Axios, as like Object methods.
+-->Pretty good while making api  calls as compared with fetch()
+
+*Using async/await
+-->If you mention the await while getting response it will returns the normal Object instead of Promise, where as not mention will get the output in Promise()
+
+
+
+
+
