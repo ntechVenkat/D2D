@@ -1,0 +1,25 @@
+DAY6
+*React Routing
+-->Navigating from one page to another page, In React core library Routing not existed, we have to install externally like from NPM.
+-->npm install react-router-dom
+-->By using BrowserRouter, Routes, Route, Link features in the package we can Implement the routing.
+-->path, element, to these are the props which can pass to the above components of Route, Link
+
+*React Router setup, Links
+-->Confugure the Routers, Navigation of Links means implementing clicking features
+-->Nested Routing means we can navigate from one path to added another path of existed one like http://localhost:3000/contact/personal
+See Here we are navigating the path to personal from contact not directly from route path of localhost:3000.
+-->For the implementing like above we should use one Route component syntax just seems like element in html, <Route></Route>
+and <Outlet/>, conscious syntax point of view is should give the same path of value to 'to' prop as mentioned in the child path prop value.
+should define the child components in parent component only while we are routing from parent path.
+-->We can route the ErrPage by mentioning the path value as *, if all existed path values are not matching.
+
+
+*Params and Redirect
+-->Params are nothing but the url data, 
+-->Params like when we working with multiple pages, If we want to send params from one page to another page like http requests through url along with params,
+This will be two ways of path or Route & query, While sending the request to the server with parameter name only in this whatever we get that will be added as value to that name, in query we will get name & value of params.
+-->Redirect was replaced by Navigate in the v6 react-router-dom, match also replaced by useParams, and Switch by Routes
+
+
+
