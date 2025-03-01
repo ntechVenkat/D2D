@@ -1,0 +1,19 @@
+DAY7
+*Learning Redux
+-->It's a library, Any library in react used to simplify the functionality
+-->Redux library is for to simplify the state management, Redux is state management pattern means(procedure)
+-->store(Objective complex state data of information), reducer(function to make changes of state, return value will be new state), dispatch(other method used to call the reducer)
+and action(Input object of dispatch, what type of operation defined by type key like condition, payLoad is the data changing statement)
+
+*App starting point for Redux
+-->npm install redux, It belongs to only redux library can't link up to react with this
+-->npm install react-redux, we can use redux methods in the React.
+
+*Redux Store setup & Contact Reducer
+-->Provider, useSelector, useDispatch, action creator(create function for the action), combineReducers()
+-->Provider react-reducer component will allow us to use the redux methods in the entire project, it takes the created store as prop value.
+-->useSelector makes us to dump the returned complete state or specific field of state from reducer function, it takes input as reducer state and returns the object.
+-->useDispatch, It allows us to use store dispatch actions in any component by simply importing method.
+-->Action Creator, For optimization and easy to undestandable readable, avoid complexicity make all the dispatch actions place in one place project.
+It's a function returns the dispatch action object.
+-->combineReducers, It's a method to combine reducers in one object with our own naming keys, and assigned to one variable like rootReducer.
