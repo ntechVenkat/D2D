@@ -13,7 +13,7 @@ const Result = () => {
         <thead>
           <tr>
             <th>Reg.Count</th>
-            <th>Name</th>
+            <th>Recent.Name</th>
             <th>Course</th>
             <th>Contact</th>
           </tr>

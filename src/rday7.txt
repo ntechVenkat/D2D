@@ -17,3 +17,11 @@ and action(Input object of dispatch, what type of operation defined by type key 
 -->Action Creator, For optimization and easy to undestandable readable, avoid complexicity make all the dispatch actions place in one place project.
 It's a function returns the dispatch action object.
 -->combineReducers, It's a method to combine reducers in one object with our own naming keys, and assigned to one variable like rootReducer.
+
+*Redux Thunk & HTTP
+-->It is a library to use for make API calls through middlewareasync function.
+-->Redux thunk it's a middleware while dispatch the action.
+-->It allows us to return the functions instead of plain action objects, We can make API calls by using the thunk middleware async function while dispatching the action.
+-->npm install redux-thunk
+-->applyMiddleware(thunk or saga) method of the thunk, to handle the middleware functions
+-->Thunk is an action creator, It takes a dispatch & getState as an arguments, which allows to make api calls before action dispatching

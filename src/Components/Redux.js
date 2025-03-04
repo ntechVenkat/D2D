@@ -1,10 +1,12 @@
-import { createStore, combineReducers } from "redux";
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import { thunk } from "redux-thunk";
 
-let initialState = {
+const initialState = {
   course: "React",
   person: "",
   mobile: "",
   totalPersons: 0,
+  site: "",
 };
 
 function detailsReducer(state = initialState, action) {
@@ -39,11 +41,21 @@ function statusReducer(state = [], action) {
   }
 }
 
+function thunkReducer(state = initialState, action) {
+  switch (action.type) {
+    case "addSite":
+      return { ...state, site: action.payload };
+    default:
+      return state;
+  }
+}
+
 let rootReducer = combineReducers({
   details: detailsReducer,
   status: statusReducer,
+  siteReducer: thunkReducer,
 });
 
-let store = createStore(rootReducer);
+let store = createStore(rootReducer, applyMiddleware(thunk));
 export default store;
-console.log(store.getState());
+// console.log(store.getState());
