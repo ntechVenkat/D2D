@@ -7,7 +7,7 @@ export const Axios = () => {
   });
   useEffect(() => {
     getProducts();
-  });
+  }, []);
 
   async function getProducts() {
     let res = await url.get("/products");

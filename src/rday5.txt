@@ -34,6 +34,18 @@ axios automatically will convert in sending & getting data requirements.
 *Using async/await
 -->If you mention the await while getting response it will returns the normal Object instead of Promise, where as not mention will get the output in Promise()
 
+*Context API
+-->It's core library feature of react,
+-->It is used by two more major libraries like react-router-dom, and global state management library redux.This much of importance have the Context API.
+-->By using this we can avoid prop drilling in react while passing props to components of entire application.
+-->In essentially, for creating contextAPI should use createContext which was at react.
+-->It has two components for using one is Provider to maintain the context, Based upon the type of component we are consuming another one is Consumer or useContext() hook.
+-->If we are trying to consuming the context non child of provider, it will takes as undefined.
+-->If we have multiple Providers in the component, at this time the consumer child component will takes nearest context of the provider.
+
+
+
+
 
 
 
