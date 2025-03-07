@@ -1,0 +1,5 @@
+*Higher Order Components
+-->This is the advanced feature of in the React.
+-->It takes the input of Component as props and returns the Component with some additional props
+without changing the original component which is coming as prop to HOC.
+-->Mostly it will be useful when we need authentication in multiple components if authentication fail then navigate to Authentication page
