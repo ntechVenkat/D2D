@@ -1,0 +1,5 @@
+*Passing props from child to parent component
+-->Create one function in parent
+-->Same function pass as prop to Child
+-->Provide Input to that prop function at Child component
+-->Access the input coming from the Child then use it in Parent.
