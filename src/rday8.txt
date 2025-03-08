@@ -1,10 +1,2 @@
-*Redux Thunk & HTTP
+*Reuirement Task like CRUD operations 
 -->
-
-
-Route Protection(Guared)
-
-Day8-02-03-2025
-Persist settings to Local storage
-Server Side Interaction
-Higher Order Components

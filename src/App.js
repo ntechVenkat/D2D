@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { getData, deleteData, postData, putData } from "./api.js";
-import Table from "./Table.js";
-import Form from "./Form";
+import { getData, deleteData, postData, putData } from "./Components/api.js";
+import Table from "./Components/Table.js";
+import Form from "./Components/Form";
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -57,9 +57,9 @@ const App = () => {
     <div>
       <center>
         <div className="container d-flex flex-row justify-content-center mt-2">
-          <h2 className="col-3">API Data in Table</h2>
+          <h2 className="col-4">API Data in Table</h2>
           <button
-            className="btn btn-primary col-1"
+            className="btn btn-primary col-2"
             onClick={() => {
               setForm(true);
               setFormData({ name: "", cost: "" });
@@ -68,10 +68,10 @@ const App = () => {
             Add
           </button>
         </div>
-        <Table products={products} delete={deleteProduct} edit={editProduct} />
         {form && (
           <Form cancel={cancelForm} formData={formData} add={addProduct} />
         )}
+        <Table products={products} delete={deleteProduct} edit={editProduct} />
       </center>
     </div>
   );
